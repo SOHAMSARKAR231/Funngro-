@@ -1,0 +1,6 @@
+{
+  "name": "Funngro – Earn Real Money & India's Leading Youth Platform",
+  "description": "Funngro enables Indian teens and young adults to earn real money via UPI by completing tasks for top brands, while giving brands unmatched youth reach.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

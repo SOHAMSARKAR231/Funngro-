@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Fraunces', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-cream: #FFF8EC;
+  --color-deep-indigo: #14112B;
+  --color-funngro-green: #19C37D;
+  --color-electric-violet: #7B5CFA;
+  --color-sunny-yellow: #FFC93C;
+  --color-coral: #FF6B6B;
+  --color-sky: #4CC9F0;
+  --color-muted-text: #6B6785;
+  --color-border-warm: #E9E2D3;
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: 0 10px 30px -5px rgba(20, 17, 43, 0.08), 0 4px 6px -2px rgba(20, 17, 43, 0.04);
+  }
+  .shadow-soft-lg {
+    box-shadow: 0 20px 40px -10px rgba(20, 17, 43, 0.12), 0 8px 16px -4px rgba(20, 17, 43, 0.06);
+  }
+  .shadow-sticker {
+    box-shadow: 0 8px 0px 0px rgba(20, 17, 43, 0.9);
+  }
+  .shadow-sticker-sm {
+    box-shadow: 0 4px 0px 0px rgba(20, 17, 43, 0.85);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
